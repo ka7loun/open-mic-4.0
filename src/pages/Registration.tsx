@@ -59,11 +59,11 @@ const Registration = () => {
 
           {/* Embedded Google Form */}
           <div className="bg-gradient-to-br from-secondary-50 to-white rounded-3xl p-8 shadow-xl">
-            <div className="aspect-video w-full">
+            <div className="w-full">
               <iframe
                 src="https://docs.google.com/forms/d/e/1FAIpQLSdNYZZ7y6URosv3Xstjro8_mxl_ulYztc0flQ7a-7H7RRsIPA/viewform?embedded=true"
                 width="100%"
-                height="100%"
+                style={{ minHeight: '500px', height: '60vh', maxHeight: '900px' }}
                 frameBorder="0"
                 marginHeight={0}
                 marginWidth={0}
