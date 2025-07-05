@@ -134,7 +134,7 @@ const Footer = () => {
         <div className="border-t border-secondary-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-secondary-400 text-sm font-alexandria">
-              © {currentYear} IEEE ESSTHS SIGHT Group. All rights reserved.
+              © {currentYear} Open Mic. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <Link 

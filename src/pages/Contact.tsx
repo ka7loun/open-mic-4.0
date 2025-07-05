@@ -23,13 +23,6 @@ const Contact = () => {
       value: 'Sahloul, Sousse, Tunisia',
       href: '#',
       description: 'Event venue location'
-    },
-    {
-      icon: Clock,
-      title: 'Response Time',
-      value: '24-48 hours',
-      href: '#',
-      description: 'Average email response time'
     }
   ];
 
@@ -104,7 +97,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {contactMethods.map((method, index) => (
               <div key={index} className="bg-gradient-to-br from-secondary-50 to-white rounded-2xl p-8 text-center hover:shadow-xl transition-shadow duration-300 group border border-secondary-200">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-pink to-primary-purple rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">

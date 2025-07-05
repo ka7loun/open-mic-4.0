@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, MapPin, Users, Award, Mic, ArrowRight, CheckCircle } from 'lucide-react';
+import { Calendar, MapPin, Users, Award, Mic, ArrowRight, CheckCircle, Globe } from 'lucide-react';
 import CountdownTimer from '../components/CountdownTimer';
 
 const Home = () => {
   const stats = [
     { number: '4', label: 'Edition', icon: Award },
     { number: '200+', label: 'Students Guided', icon: Users },
-    { number: '3', label: 'Past Editions', icon: CheckCircle },
-    { number: '1', label: 'Day Event', icon: Calendar },
+    { number: '30+', label: 'Speakers & Advisors', icon: Mic },
+    { number: '30+', label: 'National & International Universities', icon: Globe },
   ];
 
   const highlights = [
