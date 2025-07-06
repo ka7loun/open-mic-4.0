@@ -6,15 +6,15 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'ieee.sight.essths@gmail.com',
-      href: 'mailto:ieee.sight.essths@gmail.com',
+      value: 'openmicorientation@gmail.com',
+      href: 'mailto:openmicorientation@gmail.com',
       description: 'Send us an email for detailed inquiries'
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+216 25 968 200',
-      href: 'tel:+21625968200',
+      value: '58 353 847 / 99213430',
+      href: 'tel:58353847',
       description: 'Call us for immediate assistance'
     },
     {
