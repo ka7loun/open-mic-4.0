@@ -146,10 +146,10 @@ const Registration = () => {
                 Email Us
               </h3>
               <a
-                href="mailto:ieee.sight.essths@gmail.com"
+                href="mailto:openmicorientation@gmail.com"
                 className="font-alexandria text-lg text-primary-blue hover:text-primary-pink transition-colors duration-200"
               >
-                ieee.sight.essths@gmail.com
+                openmicorientation@gmail.com
               </a>
             </div>
 
@@ -159,10 +159,10 @@ const Registration = () => {
                 Call Us
               </h3>
               <a
-                href="tel:+21625968200"
+                href="tel:58353847"
                 className="font-alexandria text-lg text-primary-blue hover:text-primary-pink transition-colors duration-200"
               >
-                +216 25 968 200
+                58 353 847 / 99213430
               </a>
             </div>
           </div>
