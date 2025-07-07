@@ -25,6 +25,13 @@ const Footer = () => {
             <p className="text-secondary-300 font-alexandria text-sm leading-relaxed mb-6">
               A flagship academic guidance event organized by IEEE ESSTHS SIGHT Group in collaboration with the WIE Affinity Group.
             </p>
+            {/* Organizer Logos */}
+            <div className="flex items-center space-x-4 mb-6">
+              <span className="text-xs text-secondary-200 mr-2">Organized by:</span>
+              <img src="/ieee essths sb logo.png" alt="IEEE SB Logo" className="h-8 w-auto bg-white rounded shadow p-1" />
+              <img src="/sightlogo.png" alt="SIGHT Logo" className="h-8 w-auto bg-white rounded shadow p-1" />
+              <img src="/wie logo.png" alt="WIE Logo" className="h-8 w-auto bg-white rounded shadow p-1" />
+            </div>
             
             {/* Social Media */}
             <div className="flex space-x-4">

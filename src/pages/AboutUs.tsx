@@ -107,6 +107,16 @@ const AboutUs = () => {
               <div key={index} className={`relative overflow-hidden rounded-3xl bg-gradient-to-r ${org.color} p-8 lg:p-12 text-white`}>
                 <div className="relative z-10 grid lg:grid-cols-3 gap-8 items-center">
                   <div className="lg:col-span-2">
+                    {/* Organization Logo */}
+                    {org.name === 'IEEE ESSTHS SB' && (
+                      <img src="/ieee essths sb logo.png" alt="IEEE ESSTHS SB Logo" className="h-16 w-auto mb-4 bg-white rounded-xl shadow-md p-2 inline-block" />
+                    )}
+                    {org.name === 'SIGHT Group' && (
+                      <img src="/sightlogo.png" alt="SIGHT Group Logo" className="h-16 w-auto mb-4 bg-white rounded-xl shadow-md p-2 inline-block" />
+                    )}
+                    {org.name === 'WIE Affinity Group' && (
+                      <img src="/wie logo.png" alt="WIE Affinity Group Logo" className="h-16 w-auto mb-4 bg-white rounded-xl shadow-md p-2 inline-block" />
+                    )}
                     <h3 className="font-poppins font-bold text-2xl lg:text-3xl mb-4">
                       {org.name}
                     </h3>
