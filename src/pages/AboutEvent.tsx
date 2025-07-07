@@ -118,59 +118,6 @@ const AboutEvent = () => {
         </div>
       </section>
 
-      {/* What Makes It Special Section */}
-      <section className="py-20 bg-gradient-to-br from-secondary-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-poppins font-bold text-3xl lg:text-4xl text-primary-purple mb-6">
-              What Makes It Special?
-            </h2>
-            <p className="font-alexandria text-lg text-secondary-700 max-w-3xl mx-auto">
-              Open Mic Orientation 4.0 goes beyond traditional academic guidance with innovative features and comprehensive support.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            {specialFeatures.map((feature, index) => (
-              <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 group">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-pink to-primary-purple rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <feature.icon className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="font-poppins font-bold text-xl text-primary-purple mb-4">
-                  {feature.title}
-                </h3>
-                <p className="font-alexandria text-secondary-700 leading-relaxed">
-                  {feature.description}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          {/* Expanded Tracks */}
-          <div className="bg-gradient-to-r from-primary-purple to-primary-pink rounded-3xl p-8 lg:p-12 text-white">
-            <div className="text-center mb-8">
-              <h3 className="font-poppins font-bold text-2xl lg:text-3xl mb-4">
-                Expanded Academic Tracks
-              </h3>
-              <p className="font-alexandria text-lg text-white/90">
-                Comprehensive guidance across multiple academic domains
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {tracks.map((track, index) => (
-                <div key={index} className="bg-white/20 backdrop-blur-md rounded-xl p-6 text-center">
-                  <Star className="w-8 h-8 mx-auto mb-3 text-primary-blue" />
-                  <h4 className="font-poppins font-semibold text-lg">
-                    {track}
-                  </h4>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Past Editions Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -209,26 +156,36 @@ const AboutEvent = () => {
               </div>
             ))}
           </div>
-
-          {/* Overall Impact */}
-          <div className="bg-gradient-to-br from-primary-blue to-primary-purple rounded-3xl p-8 lg:p-12 text-white text-center">
-            <h3 className="font-poppins font-bold text-2xl lg:text-3xl mb-6">
-              Overall Impact
-            </h3>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div>
-                <div className="font-poppins font-bold text-4xl lg:text-5xl mb-2">200+</div>
-                <div className="font-alexandria text-lg text-white/90">Students Guided</div>
-              </div>
-              <div>
-                <div className="font-poppins font-bold text-4xl lg:text-5xl mb-2">3</div>
-                <div className="font-alexandria text-lg text-white/90">Successful Editions</div>
-              </div>
-              <div>
-                <div className="font-poppins font-bold text-4xl lg:text-5xl mb-2">100%</div>
-                <div className="font-alexandria text-lg text-white/90">Hands-on Mentorship</div>
-              </div>
+          {/* Past Editions Photo Gallery */}
+          <div className="mb-16">
+            <h3 className="font-poppins font-semibold text-2xl text-primary-purple mb-6 text-center">Past Editions Gallery</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <img src="/past ed/image_2025-07-06_185106969.png" alt="Past Edition 1" className="rounded-xl object-cover w-full h-48" />
+              <img src="/past ed/image_2025-07-06_185014678.png" alt="Past Edition 2" className="rounded-xl object-cover w-full h-48" />
+              <img src="/past ed/image_2025-07-06_185002031.png" alt="Past Edition 3" className="rounded-xl object-cover w-full h-48" />
+              <img src="/past ed/image_2025-07-06_185130981.png" alt="Past Edition 4" className="rounded-xl object-cover w-full h-48" />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Overall Impact */}
+      <section className="py-20 bg-gradient-to-br from-primary-blue to-primary-purple rounded-3xl p-8 lg:p-12 text-white text-center">
+        <h3 className="font-poppins font-bold text-2xl lg:text-3xl mb-6">
+          Overall Impact
+        </h3>
+        <div className="grid md:grid-cols-3 gap-8">
+          <div>
+            <div className="font-poppins font-bold text-4xl lg:text-5xl mb-2">200+</div>
+            <div className="font-alexandria text-lg text-white/90">Students Guided</div>
+          </div>
+          <div>
+            <div className="font-poppins font-bold text-4xl lg:text-5xl mb-2">3</div>
+            <div className="font-alexandria text-lg text-white/90">Successful Editions</div>
+          </div>
+          <div>
+            <div className="font-poppins font-bold text-4xl lg:text-5xl mb-2">100%</div>
+            <div className="font-alexandria text-lg text-white/90">Hands-on Mentorship</div>
           </div>
         </div>
       </section>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Users, Target, Eye, Award, Globe, Zap } from 'lucide-react';
 
 const AboutUs = () => {
@@ -54,6 +54,26 @@ const AboutUs = () => {
     'Content Manager',
     'Partnerships Lead'
   ];
+
+  const sightExcomImages = [
+    '/sight excom/WhatsApp Image 2025-06-24 à 01.59.18_c651cd39.jpg',
+    '/sight excom/WhatsApp Image 2025-06-24 à 01.59.18_c4029d68.jpg',
+    '/sight excom/WhatsApp Image 2025-06-24 à 01.59.09_40c2e205.jpg',
+    '/sight excom/WhatsApp Image 2025-06-24 à 01.59.10_92b1f21e.jpg',
+    '/sight excom/WhatsApp Image 2025-06-24 à 01.59.18_1619c454.jpg',
+  ];
+  const wieExcomImages = [
+    '/wie excom/1741806488553.jpeg',
+    '/wie excom/1741806488553 - Copy.jpeg',
+    '/wie excom/1741806488553 - Copy (3).jpeg',
+    '/wie excom/1741806488553 - Copy (4).jpeg',
+    '/wie excom/1741806488553 - Copy (5).jpeg',
+  ];
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalImg, setModalImg] = useState('');
+  const openModal = (img) => { setModalImg(img); setModalOpen(true); };
+  const closeModal = () => setModalOpen(false);
 
   return (
     <div className="pt-16 lg:pt-20">
@@ -113,6 +133,42 @@ const AboutUs = () => {
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"></div>
               </div>
             ))}
+            {/* SIGHT Group */}
+            <div className={`relative overflow-hidden rounded-3xl bg-gradient-to-r from-primary-pink to-primary-blue p-8 lg:p-12 text-white`}>
+              {/* SIGHT ExCom Gallery */}
+              <div className="mt-8">
+                <h4 className="font-poppins font-semibold text-lg mb-4 text-white">SIGHT ExCom</h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                  {sightExcomImages.map((img, i) => (
+                    <img
+                      key={i}
+                      src={img}
+                      alt={`SIGHT ExCom ${i+1}`}
+                      className="rounded-2xl object-cover w-full h-48 shadow-md cursor-pointer transition-transform duration-200 hover:scale-105 hover:shadow-xl border-4 border-white"
+                      onClick={() => openModal(img)}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+            {/* WIE Affinity Group */}
+            <div className={`relative overflow-hidden rounded-3xl bg-gradient-to-r from-primary-purple to-primary-pink p-8 lg:p-12 text-white`}>
+              {/* WIE ExCom Gallery */}
+              <div className="mt-8">
+                <h4 className="font-poppins font-semibold text-lg mb-4 text-white">WIE ExCom</h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                  {wieExcomImages.map((img, i) => (
+                    <img
+                      key={i}
+                      src={img}
+                      alt={`WIE ExCom ${i+1}`}
+                      className="rounded-2xl object-cover w-full h-48 shadow-md cursor-pointer transition-transform duration-200 hover:scale-105 hover:shadow-xl border-4 border-white"
+                      onClick={() => openModal(img)}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -147,86 +203,11 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-poppins font-bold text-3xl lg:text-4xl text-primary-purple mb-6">
-              Our Team
-            </h2>
-            <p className="font-alexandria text-lg text-secondary-700 max-w-3xl mx-auto">
-              Meet the dedicated individuals working tirelessly to make Open Mic Orientation 4.0 an unforgettable experience.
-            </p>
-          </div>
-
-          {/* Team Photos Placeholder */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {[1, 2, 3, 4, 5, 6].map((index) => (
-              <div key={index} className="bg-gradient-to-br from-secondary-100 to-secondary-200 rounded-2xl p-8 text-center">
-                <div className="w-24 h-24 bg-gradient-to-br from-primary-pink to-primary-purple rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Users className="w-12 h-12 text-white" />
-                </div>
-                <h3 className="font-poppins font-semibold text-lg text-primary-purple mb-2">
-                  Team Member {index}
-                </h3>
-                <p className="font-alexandria text-secondary-600">
-                  {teamRoles[(index - 1) % teamRoles.length]}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          {/* Team Roles */}
-          <div className="bg-gradient-to-r from-primary-purple to-primary-pink rounded-3xl p-8 lg:p-12 text-white">
-            <div className="text-center mb-8">
-              <h3 className="font-poppins font-bold text-2xl lg:text-3xl mb-4">
-                Team Roles & Responsibilities
-              </h3>
-              <p className="font-alexandria text-lg text-white/90">
-                Our diverse team brings together expertise from various domains to ensure event success.
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {teamRoles.map((role, index) => (
-                <div key={index} className="bg-white/20 backdrop-blur-md rounded-xl p-6 text-center">
-                  <Zap className="w-8 h-8 mx-auto mb-3 text-primary-blue" />
-                  <h4 className="font-poppins font-semibold text-lg">
-                    {role}
-                  </h4>
-                </div>
-              ))}
-            </div>
-          </div>
+      {modalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80" onClick={closeModal}>
+          <img src={modalImg} alt="ExCom Large" className="max-h-[80vh] max-w-[90vw] rounded-2xl shadow-2xl border-4 border-white" />
         </div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-br from-secondary-50 to-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-poppins font-bold text-3xl lg:text-4xl text-primary-purple mb-6">
-            Join Our Mission
-          </h2>
-          <p className="font-alexandria text-lg text-secondary-700 mb-8">
-            Be part of our journey to empower students and shape the future of academic guidance. 
-            Together, we can make a lasting impact on the educational landscape.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="mailto:ieee.sight.essths@gmail.com"
-              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary-pink to-primary-purple text-white font-poppins font-semibold rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300"
-            >
-              Get Involved
-            </a>
-            <a
-              href="tel:+21625968200"
-              className="inline-flex items-center px-8 py-4 border-2 border-primary-purple text-primary-purple font-poppins font-semibold rounded-full hover:bg-primary-purple hover:text-white transition-all duration-300"
-            >
-              Contact Us
-            </a>
-          </div>
-        </div>
-      </section>
+      )}
     </div>
   );
 };
