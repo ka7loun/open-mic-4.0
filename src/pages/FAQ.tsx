@@ -91,7 +91,7 @@ const FAQ = () => {
           <div className="bg-gradient-to-r from-primary-purple to-primary-pink rounded-3xl p-8 lg:p-12 text-white">
             <HelpCircle className="w-16 h-16 mx-auto mb-6 text-primary-blue" />
             <h2 className="font-poppins font-bold text-3xl lg:text-4xl mb-6">
-              Still Have Questions?
+            Still Have Questions?
             </h2>
             <p className="font-alexandria text-lg text-white/90 mb-8">
               Our team is here to help! Don't hesitate to reach out if you need more information 
@@ -116,8 +116,10 @@ const FAQ = () => {
             <div className="mt-8 pt-8 border-t border-white/20">
               <p className="font-alexandria text-white/80">
                 <strong>Quick Contact:</strong><br />
-                📧 ieee.sight.essths@gmail.com<br />
-                📞 +216 25 968 200
+                📧 openmicorientation@gmail.com
+                <br />
+                📞 58 353 847 / 99213430
+
               </p>
             </div>
           </div>

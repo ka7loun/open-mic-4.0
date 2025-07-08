@@ -140,9 +140,14 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-secondary-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-secondary-400 text-sm font-alexandria">
-              © {currentYear} Open Mic. All rights reserved.
-            </p>
+            <div>
+              <p className="text-secondary-400 text-sm font-alexandria">
+                © {currentYear} Open Mic. All rights reserved.
+              </p>
+              <p className="text-secondary-400 text-xs mt-2 font-alexandria">
+                Website developed by <a href="https://www.linkedin.com/in/ahmed-kahloun/" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary-blue">Ahmed Kahloun</a>
+              </p>
+            </div>
             <div className="flex space-x-6">
               <Link 
                 to="/faq" 

@@ -56,26 +56,26 @@ const AboutUs = () => {
   ];
 
   const sightExcomImages = [
-    '/sight excom/WhatsApp Image 2025-06-24 à 01.59.18_c651cd39.jpg',
-    '/sight excom/WhatsApp Image 2025-06-24 à 01.59.18_c4029d68.jpg',
-    '/sight excom/WhatsApp Image 2025-06-24 à 01.59.09_40c2e205.jpg',
-    '/sight excom/WhatsApp Image 2025-06-24 à 01.59.10_92b1f21e.jpg',
-    '/sight excom/WhatsApp Image 2025-06-24 à 01.59.18_1619c454.jpg',
+    { src: '/sight excom/WhatsApp Image 2025-06-24 à 01.59.10_92b1f21e.jpg ' , name: 'Salim Hamouda', role: 'Chair' },
+    { src: '/sight excom/WhatsApp Image 2025-06-24 à 01.59.18_c651cd39.jpg ', name: 'Yassine Boudegga', role: 'Vice Chair' },
+    { src: '/sight excom/WhatsApp Image 2025-06-24 à 01.59.09_40c2e205.jpg', name: 'Lamiss Ben Fraj', role: 'General Secretary' },
+    { src: '/sight excom/WhatsApp Image 2025-06-24 à 01.59.18_1619c454.jpg ', name: 'Omar Ayed ', role: 'WebMaster' },
+    { src: '/sight excom/WhatsApp Image 2025-06-24 à 01.59.18_c4029d68.jpg', name: 'Souleiman Ben Salem ', role: 'Treasurer' },
   ];
   const wieExcomImages = [
-    '/wie excom/1741806488553.jpeg',
-    '/wie excom/1741806488553 - Copy.jpeg',
-    '/wie excom/1741806488553 - Copy (3).jpeg',
-    '/wie excom/1741806488553 - Copy (4).jpeg',
-    '/wie excom/1741806488553 - Copy (5).jpeg',
+    { src: '/wie excom/1741806488553.jpeg', name: 'Salma Ghedamsi', role: 'Chair' },
+    { src: '/wie excom/1741806488553 - Copy.jpeg', name: 'Nermine Ben Ameur', role: 'Vice Chair' },
+    { src: '/wie excom/1741806488553 - Copy (3).jpeg', name: 'Fatma Ben Jedida', role: 'General Secretary' },
+    { src: '/wie excom/1741806488553 - Copy (4).jpeg', name: 'Ghassen Mekki', role: 'WebMaster' },
+    { src: '/wie excom/1741806488553 - Copy (5).jpeg', name: 'Mohamed Guizani', role: 'Treasurer' },
   ];
   const sbExcomImages = [
-    '/sb excom/Your image here👈.png',
-    '/sb excom/Your image here👈 (1).png',
-    '/sb excom/Your image here👈 (2).png',
-    '/sb excom/Your image here👈 (3).png',
-    '/sb excom/Your image here👈 (4).png',
-    '/sb excom/Your image here👈 (5).png',
+    { src: '/sb excom/Your image here👈 (1).png ', name: 'Arije Ben Abdelhamid', role: 'Chair' },
+    { src: '/sb excom/Your image here👈.png', name: 'Yomna Ismaiel', role: 'Vice Chair' },
+    { src: ' /sb excom/Your image here👈 (4).png', name: 'Yasmine Sahli', role: 'General Secretary' },
+    { src: '/sb excom/Your image here👈 (3).png', name: 'Nesrine Ncibi', role: 'WebMaster' },
+    { src: '/sb excom/Your image here👈 (2).png', name: 'Fourat Idani', role: 'Media Chief' },
+    { src: '/sb excom/Your image here👈 (5).png', name: 'Naissen Chebbi', role: 'Treasurer' },
   ];
 
   const [modalOpen, setModalOpen] = useState(false);
@@ -157,14 +157,21 @@ const AboutUs = () => {
               <div className="mt-8">
                 <h4 className="font-poppins font-semibold text-lg mb-4 text-white">IEEE ESSTHS SB ExCom</h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                  {sbExcomImages.map((img, i) => (
-                    <img
-                      key={i}
-                      src={img}
-                      alt={`SB ExCom ${i+1}`}
-                      className="rounded-2xl object-contain w-full h-64 shadow-md cursor-pointer transition-transform duration-200 hover:scale-105 hover:shadow-xl border-4 border-white bg-white/80"
-                      onClick={() => openModal(img)}
-                    />
+                  {sbExcomImages.map((member, i) => (
+                    <div key={i} className="flex flex-col">
+                      <img
+                        src={member.src}
+                        alt={member.name || `SB ExCom ${i+1}`}
+                        className="rounded-t-2xl object-contain w-full h-64 shadow-md cursor-pointer transition-transform duration-200 hover:scale-105 hover:shadow-xl border-4 border-white border-b-0 bg-white/80"
+                        onClick={() => openModal(member.src)}
+                      />
+                      {member.name && (
+                        <div className="bg-white p-4 rounded-b-2xl shadow-md border-2 border-secondary-100 text-center">
+                          <h5 className="font-poppins font-semibold text-primary-purple text-lg">{member.name}</h5>
+                          <p className="font-alexandria text-secondary-700 text-sm">{member.role}</p>
+                        </div>
+                      )}
+                    </div>
                   ))}
                 </div>
               </div>
@@ -175,14 +182,19 @@ const AboutUs = () => {
               <div className="mt-8">
                 <h4 className="font-poppins font-semibold text-lg mb-4 text-white">SIGHT ExCom</h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                  {sightExcomImages.map((img, i) => (
-                    <img
-                      key={i}
-                      src={img}
-                      alt={`SIGHT ExCom ${i+1}`}
-                      className="rounded-2xl object-contain w-full h-64 shadow-md cursor-pointer transition-transform duration-200 hover:scale-105 hover:shadow-xl border-4 border-white bg-white/80"
-                      onClick={() => openModal(img)}
-                    />
+                  {sightExcomImages.map((member, i) => (
+                    <div key={i} className="flex flex-col">
+                      <img
+                        src={member.src}
+                        alt={member.name || `SIGHT ExCom ${i+1}`}
+                        className="rounded-t-2xl object-contain w-full h-64 shadow-md cursor-pointer transition-transform duration-200 hover:scale-105 hover:shadow-xl border-4 border-white border-b-0 bg-white/80"
+                        onClick={() => openModal(member.src)}
+                      />
+                      <div className="bg-white p-4 rounded-b-2xl shadow-md border-2 border-secondary-100 text-center">
+                        <h5 className="font-poppins font-semibold text-primary-purple text-lg">{member.name}</h5>
+                        <p className="font-alexandria text-secondary-700 text-sm">{member.role}</p>
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>
@@ -193,14 +205,19 @@ const AboutUs = () => {
               <div className="mt-8">
                 <h4 className="font-poppins font-semibold text-lg mb-4 text-white">WIE ExCom</h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                  {wieExcomImages.map((img, i) => (
-                    <img
-                      key={i}
-                      src={img}
-                      alt={`WIE ExCom ${i+1}`}
-                      className="rounded-2xl object-contain w-full h-64 shadow-md cursor-pointer transition-transform duration-200 hover:scale-105 hover:shadow-xl border-4 border-white bg-white/80"
-                      onClick={() => openModal(img)}
-                    />
+                  {wieExcomImages.map((member, i) => (
+                    <div key={i} className="flex flex-col">
+                      <img
+                        src={member.src}
+                        alt={member.name || `WIE ExCom ${i+1}`}
+                        className="rounded-t-2xl object-contain w-full h-64 shadow-md cursor-pointer transition-transform duration-200 hover:scale-105 hover:shadow-xl border-4 border-white border-b-0 bg-white/80"
+                        onClick={() => openModal(member.src)}
+                      />
+                      <div className="bg-white p-4 rounded-b-2xl shadow-md border-2 border-secondary-100 text-center">
+                        <h5 className="font-poppins font-semibold text-primary-purple text-lg">{member.name}</h5>
+                        <p className="font-alexandria text-secondary-700 text-sm">{member.role}</p>
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>
@@ -241,7 +258,7 @@ const AboutUs = () => {
 
       {modalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80" onClick={closeModal}>
-          <img src={modalImg} alt="ExCom Large" className="max-h-[80vh] max-w-[90vw] rounded-2xl shadow-2xl border-4 border-white" />
+          <img src={modalImg} alt="ExCom Member" className="max-h-[80vh] max-w-[90vw] rounded-2xl shadow-2xl border-4 border-white" />
         </div>
       )}
     </div>
