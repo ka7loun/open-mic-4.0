@@ -69,6 +69,14 @@ const AboutUs = () => {
     '/wie excom/1741806488553 - Copy (4).jpeg',
     '/wie excom/1741806488553 - Copy (5).jpeg',
   ];
+  const sbExcomImages = [
+    '/sb excom/Your image here👈.png',
+    '/sb excom/Your image here👈 (1).png',
+    '/sb excom/Your image here👈 (2).png',
+    '/sb excom/Your image here👈 (3).png',
+    '/sb excom/Your image here👈 (4).png',
+    '/sb excom/Your image here👈 (5).png',
+  ];
 
   const [modalOpen, setModalOpen] = useState(false);
   const [modalImg, setModalImg] = useState('');
@@ -143,6 +151,24 @@ const AboutUs = () => {
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"></div>
               </div>
             ))}
+            {/* IEEE ESSTHS SB ExCom Gallery */}
+            <div className={`relative overflow-hidden rounded-3xl bg-gradient-to-r from-primary-blue to-primary-purple p-8 lg:p-12 text-white`}>
+              {/* SB ExCom Gallery */}
+              <div className="mt-8">
+                <h4 className="font-poppins font-semibold text-lg mb-4 text-white">IEEE ESSTHS SB ExCom</h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                  {sbExcomImages.map((img, i) => (
+                    <img
+                      key={i}
+                      src={img}
+                      alt={`SB ExCom ${i+1}`}
+                      className="rounded-2xl object-contain w-full h-64 shadow-md cursor-pointer transition-transform duration-200 hover:scale-105 hover:shadow-xl border-4 border-white bg-white/80"
+                      onClick={() => openModal(img)}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
             {/* SIGHT Group */}
             <div className={`relative overflow-hidden rounded-3xl bg-gradient-to-r from-primary-pink to-primary-blue p-8 lg:p-12 text-white`}>
               {/* SIGHT ExCom Gallery */}
@@ -154,7 +180,7 @@ const AboutUs = () => {
                       key={i}
                       src={img}
                       alt={`SIGHT ExCom ${i+1}`}
-                      className="rounded-2xl object-cover w-full h-48 shadow-md cursor-pointer transition-transform duration-200 hover:scale-105 hover:shadow-xl border-4 border-white"
+                      className="rounded-2xl object-contain w-full h-64 shadow-md cursor-pointer transition-transform duration-200 hover:scale-105 hover:shadow-xl border-4 border-white bg-white/80"
                       onClick={() => openModal(img)}
                     />
                   ))}
@@ -172,7 +198,7 @@ const AboutUs = () => {
                       key={i}
                       src={img}
                       alt={`WIE ExCom ${i+1}`}
-                      className="rounded-2xl object-cover w-full h-48 shadow-md cursor-pointer transition-transform duration-200 hover:scale-105 hover:shadow-xl border-4 border-white"
+                      className="rounded-2xl object-contain w-full h-64 shadow-md cursor-pointer transition-transform duration-200 hover:scale-105 hover:shadow-xl border-4 border-white bg-white/80"
                       onClick={() => openModal(img)}
                     />
                   ))}
