@@ -63,11 +63,11 @@ const AboutUs = () => {
     { src: '/sight excom/WhatsApp Image 2025-06-24 à 01.59.18_c4029d68.jpg', name: 'Souleiman Ben Salem ', role: 'Treasurer' },
   ];
   const wieExcomImages = [
-    { src: '/wie excom/1741806488553.jpeg', name: 'Salma Ghedamsi', role: 'Chair' },
+    { src: '/wie excom/salma.jpg', name: 'Salma Ghedamsi', role: 'Chair' },
     { src: '/wie excom/1741806488553 - Copy.jpeg', name: 'Nermine Ben Ameur', role: 'Vice Chair' },
-    { src: '/wie excom/1741806488553 - Copy (3).jpeg', name: 'Fatma Ben Jedida', role: 'General Secretary' },
-    { src: '/wie excom/1741806488553 - Copy (4).jpeg', name: 'Ghassen Mekki', role: 'WebMaster' },
-    { src: '/wie excom/1741806488553 - Copy (5).jpeg', name: 'Mohamed Guizani', role: 'Treasurer' },
+    { src: '/wie excom/jdida.jpg', name: 'Fatma Ben Jedida', role: 'General Secretary' },
+    { src: '/wie excom/meeki.jpg', name: 'Ghassen Mekki', role: 'WebMaster' },
+    { src: '/wie excom/guizani.jpg', name: 'Mohamed Guizani', role: 'Treasurer' },
   ];
   const sbExcomImages = [
     { src: '/sb excom/Your image here👈 (1).png ', name: 'Arije Ben Abdelhamid', role: 'Chair' },
