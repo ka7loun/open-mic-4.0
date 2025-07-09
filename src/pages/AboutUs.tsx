@@ -64,7 +64,6 @@ const AboutUs = () => {
   ];
   const wieExcomImages = [
     { src: '/wie excom/salma.jpg', name: 'Salma Ghedamsi', role: 'Chair' },
-    { src: '/wie excom/1741806488553 - Copy.jpeg', name: 'Nermine Ben Ameur', role: 'Vice Chair' },
     { src: '/wie excom/jdida.jpg', name: 'Fatma Ben Jedida', role: 'General Secretary' },
     { src: '/wie excom/meeki.jpg', name: 'Ghassen Mekki', role: 'WebMaster' },
     { src: '/wie excom/guizani.jpg', name: 'Mohamed Guizani', role: 'Treasurer' },
