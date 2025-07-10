@@ -224,24 +224,6 @@ const AboutEvent = () => {
           </div>
         </div>
       </section>
-
-      {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-primary-purple to-primary-pink">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-poppins font-bold text-3xl lg:text-4xl text-white mb-6">
-            Ready to Transform Your Future?
-          </h2>
-          <p className="font-alexandria text-xl text-white/90 mb-8">
-            Join Open Mic Orientation 4.0 and take the first step towards a successful academic and professional journey.
-          </p>
-          <a
-            href="/registration"
-            className="inline-flex items-center px-8 py-4 bg-white text-primary-purple font-poppins font-semibold rounded-full hover:bg-secondary-50 hover:scale-105 transition-all duration-300 shadow-xl"
-          >
-            Register for Open Mic 4.0
-          </a>
-        </div>
-      </section>
     </div>
   );
 };
