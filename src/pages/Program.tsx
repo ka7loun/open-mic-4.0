@@ -109,7 +109,7 @@ const Program = () => {
           {/* Event Details */}
           <div className="inline-flex items-center px-6 py-3 bg-white/20 backdrop-blur-md rounded-full text-white font-alexandria font-medium border border-white/30">
             <Calendar className="w-5 h-5 mr-2" />
-            July 20, 2025 | 08:30 - 16:00 | Sahloul, Sousse
+            July 25, 2025 | 08:30 - 16:00 | Sahloul, Sousse
           </div>
         </div>
       </section>

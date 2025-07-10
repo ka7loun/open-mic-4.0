@@ -8,7 +8,7 @@ const Registration = () => {
     'Select your preferred workshop tracks',
     'Submit the form before the deadline',
     'Wait for confirmation email',
-    'Attend the event on July 20, 2025'
+    'Attend the event on July 25, 2025'
   ];
 
   const requirements = [
@@ -39,7 +39,7 @@ const Registration = () => {
           <div className="flex items-center justify-center space-x-3 text-white">
             <AlertCircle className="w-6 h-6" />
             <span className="font-poppins font-semibold text-lg">
-              Registration Deadline: July 15, 2025
+              Registration Deadline: July 20, 2025
             </span>
           </div>
         </div>
@@ -61,7 +61,7 @@ const Registration = () => {
           <div className="bg-gradient-to-br from-secondary-50 to-white rounded-3xl p-8 shadow-xl">
             <div className="w-full">
               <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSdNYZZ7y6URosv3Xstjro8_mxl_ulYztc0flQ7a-7H7RRsIPA/viewform?embedded=true"
+                src="https://forms.office.com/pages/responsepage.aspx?id=RQ8E6ycrcE6T_SuuTwrEz9Jg1Yy3S19CgdHQxUHS8OZURFBSRklYNlcyQkw4TzBJNEQzUVQ3QkFaNi4u&route=shorturl"
                 width="100%"
                 style={{ minHeight: '500px', height: '60vh', maxHeight: '900px' }}
                 frameBorder="0"
@@ -80,7 +80,7 @@ const Registration = () => {
                 Having trouble with the embedded form?
               </p>
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdNYZZ7y6URosv3Xstjro8_mxl_ulYztc0flQ7a-7H7RRsIPA/viewform"
+                href="https://forms.office.com/pages/responsepage.aspx?id=RQ8E6ycrcE6T_SuuTwrEz9Jg1Yy3S19CgdHQxUHS8OZURFBSRklYNlcyQkw4TzBJNEQzUVQ3QkFaNi4u&route=shorturl"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary-pink to-primary-purple text-white font-poppins font-semibold rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300"
@@ -108,7 +108,7 @@ const Registration = () => {
             <div className="bg-gradient-to-br from-primary-blue to-primary-purple rounded-2xl p-8 text-white text-center">
               <Calendar className="w-12 h-12 mx-auto mb-4" />
               <h3 className="font-poppins font-bold text-xl mb-2">Date</h3>
-              <p className="font-alexandria text-lg">July 20, 2025</p>
+              <p className="font-alexandria text-lg">July 25, 2025</p>
               <p className="font-alexandria text-sm text-white/80 mt-2">Sunday</p>
             </div>
 
@@ -169,7 +169,7 @@ const Registration = () => {
 
           <div className="mt-12 p-6 bg-primary-pink/10 rounded-2xl border border-primary-pink/20">
             <p className="font-alexandria text-secondary-700">
-              <strong>Registration Deadline:</strong> July 15, 2025<br />
+              <strong>Registration Deadline:</strong> July 20, 2025<br />
               <strong>Event is FREE</strong> for all participants<br />
               <strong>Open to all students</strong> regardless of IEEE membership
             </p>

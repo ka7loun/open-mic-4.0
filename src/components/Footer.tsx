@@ -36,7 +36,7 @@ const Footer = () => {
             {/* Social Media */}
             <div className="flex space-x-4">
               <a 
-                href="https://www.facebook.com/essthsieee/" 
+                href="https://www.facebook.com/share/1F68K4qs4s/?mibextid=qi2Omg" 
                 className="p-2 bg-white/10 rounded-full hover:bg-primary-pink transition-colors duration-300"
                 aria-label="Facebook"
                 target="_blank" rel="noopener noreferrer"
@@ -44,7 +44,7 @@ const Footer = () => {
                 <Facebook className="w-5 h-5" />
               </a>
               <a 
-                href="https://www.instagram.com/ieee.essths.student.branch/" 
+                href="https://www.instagram.com/openmicorientation?igsh=MXFjYzFsNGI0aTRiOA==" 
                 className="p-2 bg-white/10 rounded-full hover:bg-primary-pink transition-colors duration-300"
                 aria-label="Instagram"
                 target="_blank" rel="noopener noreferrer"
@@ -91,7 +91,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <Calendar className="w-5 h-5 text-primary-blue mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-alexandria font-medium">July 20, 2025</p>
+                  <p className="font-alexandria font-medium">July 25, 2025</p>
                   <p className="text-secondary-300 text-sm">08:30 - 16:00</p>
                 </div>
               </div>
@@ -112,19 +112,19 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary-blue flex-shrink-0" />
                 <a 
-                  href="mailto:ieee.sight.essths@gmail.com"
+                  href="mailto:openmicorientation@gmail.com"
                   className="text-secondary-300 hover:text-primary-blue transition-colors duration-200 font-alexandria text-sm"
                 >
-                  ieee.sight.essths@gmail.com
+                  openmicorientation@gmail.com
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary-blue flex-shrink-0" />
                 <a 
-                  href="tel:+21625968200"
+                  href="tel:58353847"
                   className="text-secondary-300 hover:text-primary-blue transition-colors duration-200 font-alexandria text-sm"
                 >
-                  +216 25 968 200
+                  58 353 847 / 99213430
                 </a>
               </div>
             </div>
@@ -132,7 +132,7 @@ const Footer = () => {
             {/* Registration Deadline */}
             <div className="mt-6 p-4 bg-primary-pink/20 rounded-lg border border-primary-pink/30">
               <p className="font-poppins font-semibold text-sm mb-1">Registration Deadline</p>
-              <p className="text-secondary-200 text-sm">July 15, 2025</p>
+              <p className="text-secondary-200 text-sm">July 20, 2025</p>
             </div>
           </div>
         </div>
