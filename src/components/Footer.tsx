@@ -36,7 +36,7 @@ const Footer = () => {
             {/* Social Media */}
             <div className="flex space-x-4">
               <a 
-                href="https://www.facebook.com/share/1F68K4qs4s/?mibextid=qi2Omg" 
+                href="https://www.facebook.com/profile.php?id=61577476116305" 
                 className="p-2 bg-white/10 rounded-full hover:bg-primary-pink transition-colors duration-300"
                 aria-label="Facebook"
                 target="_blank" rel="noopener noreferrer"
